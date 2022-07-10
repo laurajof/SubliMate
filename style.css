@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.html{
+    height: 100%;
+}
+/* font-family: 'Didact Gothic', sans-serif */
+/* header de mi sitio */
+.logo{
+    width: 200px;
+}
+.header{
+    background-color: #d3bcf6;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* barra de navegacion de mi sitio */
+.navegador{
+    list-style: none;
+    grid-area: navegador;
+    background-color: #d3bcf6;
+}
+.navegador__lista{
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.navegador__lista a{
+    text-decoration: none;
+    color: black;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 17px; 
+}
+.navegador__lista__link{
+    margin: 10px;
+}
+/* footer de mi sitio */
+.footer{
+    grid-area: footer;
+    font-size: 12px;
+}
+.footer__misredes{
+    text-decoration: none;
+    background-image: url(./imagenes/footer.png);
+    background-color: #d3bcf6;
+    text-align: center;
+}
+.footer__misredes__link{
+    display: inline-block;
+}
+.footer__misredes__link img{
+    margin: 10px;
+    width: 50px
+}
+/* index */
+.layout{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "main" auto
+    "footer" auto;
+}
+/* selector de clase*/
+.subtituloresaltado{
+    color: blueviolet;
+    text-align: center;
+    font-weight: bold;
+}
+.resaltado{
+    color: blue;
+    font-weight: bold;
+}
+/* main index */
+.main{
+    grid-area: main;
+    margin-top: 20px;
+}
+.maininicio img{
+    width: 500px;
+}
+.maininicio{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main__texto{
+    margin: 10px;
+    text-align: center;
+}
+/* tipografias */
+body{
+    font-family:'Didact Gothic', sans-serif ;
+}
+/* boton */
+.boton{
+    background-color: rgba(243, 61, 97, 0.544);
+    width: fit-content;
+    border: solid 3px rgba(239, 10, 56, 0.544);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px auto;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* galeria de fotos */
+.layoutgaleria{
+    margin: 0;
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "galeria" auto
+    "footer" auto;
+}
+.galeria{
+    grid-area: galeria;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.galeria__fotos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+.galeria__fotos img{
+    width: 200px;
+    margin: 5px;
+}
+/* como comprar */
+.layoutcomocomprar{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "comocomprar" auto
+    "footer" auto;
+}
+.comocomprar{
+    grid-area: comocomprar;
+}
+.comocomprar h2{
+    margin: 5px;
+    color: blueviolet;
+    font: bold;
+}
+.comocomprar__item{
+    margin: 30px;
+    padding: 20px;
+}
+.comocomprar__item__tusdatos{
+    font-weight: bold;
+}
+.comocomprar__item__tusdatos a{
+    text-decoration: none;
+}
+/* catalogo */
+.layoutcatalogo{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "catalogo" auto
+    "footer" auto;
+}
+.catalogo{
+    grid-area: catalogo;
+}
+.catalogo__variedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.catalogo__variedades img{
+    width: 200px;
+    margin: 10px;
+}
+.catalogo__texto{
+    margin: 15px;
+    text-align: center;
+}
+/* contacto */
+.layoutcontacto{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "contacto" auto
+    "footer" auto;
+}
+.contacto{
+    grid-area: contacto;
+}
+.contacto__item{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.mapa{
+    width: 600px;
+}
+.contacto__item h2{
+    margin: 5px;
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contacto h3{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+/* MEDIA 425px - Mobile */
+@media screen and (max-width: 425px){
+    /* header mobile */
+    .logo{
+        width: 150px;
+    }
+    /* barra de navegacion para mobile */
+    .navegador__lista{
+        flex-direction:column;
+        align-items:center;
+    }
+    /* index mobile */
+    .subtituloresaltado{
+        font-size: 20px;
+    }
+    .maininicio{
+        flex-direction: column;
+    }
+    .main__texto{
+        margin: 10px;
+        text-align: center;
+    }
+    .maininicio img{
+        width: 350px;
+    }
+    /* galeria mobile */
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .galeria__fotos{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    /* catalogo mobile */
+    .catalogo__variedades{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .catalogo__variedades img{
+        width: 150px;
+        margin: 5px;
+    }
+    .catalogo__texto{
+        margin: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    /* como comprar mobile */
+    .comocomprar h2{
+        text-align: center;
+    }
+    .comocomprar__item{
+    text-align: center;
+    }
+    /* contacto mobile */
+    .contacto__item{
+        flex-direction: column;
+    }
+    .mapa{
+        width: 350px;
+    }
+    .contacto h3{
+        font-size: 20px;
+    } 
+}
+
