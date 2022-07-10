@@ -40,6 +40,10 @@
     font-weight: bold;
     font-size: 17px; 
 }
+.navegador__lista a:hover{
+    color: antiquewhite;
+
+}
 .navegador__lista__link{
     margin: 10px;
 }
@@ -112,6 +116,10 @@ body{
     padding: 10px;
     margin: 20px auto;
 }
+.boton:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
 .boton a{
     text-decoration: none;
     color: white;
@@ -143,6 +151,10 @@ body{
 .galeria__fotos img{
     width: 200px;
     margin: 5px;
+}
+.galeria__fotos img:hover{
+    transform: scale(1.5);
+    transition: all 2s;
 }
 /* como comprar */
 .layoutcomocomprar{
@@ -191,6 +203,10 @@ body{
 .catalogo__variedades img{
     width: 200px;
     margin: 10px;
+}
+.catalogo__variedades img:hover{
+    transform: scale(2);
+    transition: all 2s;
 }
 .catalogo__texto{
     margin: 15px;
