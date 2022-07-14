@@ -142,3 +142,19 @@ body{
 .comocomprar h2{
     color: blueviolet;
 }
+/* catalogo */
+.layoutcatalogo{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "catalogo" auto
+    "footer" auto;
+}
+.catalogo{
+    grid-area: catalogo;
+}
+.catalogo__variedades img{
+    width: 200px;
+    margin: 10px;
+}

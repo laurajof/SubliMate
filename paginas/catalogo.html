@@ -4,53 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../style.css">
-    <title>SubliMate|Catálogo</title>
+    <title>SubliMate|Catalogo</title>
 </head>
-<body class="layoutcatalogo">
-    <header class="header">
-        <!-- logo -->
-        <a href="../index.html"><img src="../imagenes/logo.jpg" alt="logo de mi pagina"class="logo"></a>
-    </header>
-    <navegador class="navegador">
-        <!-- barra de navegacion -->
-        <nav>
-            <ul class="navegador__lista">
-                <li class="navegador__lista__link"><a href="../index.html">Inicio</a></li>
-                <li class="navegador__lista__link"><a href="./galeria.html">Galeria</a></li>
-                <li class="navegador__lista__link"><a href="#">Catalogo</a></li>
-                <li class="navegador__lista__link"><a href="./comocomprar.html">Como Comprar</a></li>
-                <li class="navegador__lista__link"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </navegador>
-    <main class="catalogo">
-        <!-- catalogo imagenes -->
-        <section class="catalogo__variedades">
-            <img src="../imagenes/catalogot.jpg" alt="catalogo t">
-            <img src="../imagenes/catalogov.jpg" alt="catalogo v">
-            <img src="../imagenes/catalogol.jpg" alt="catalogo l">
-            <img src="../imagenes/catalogod.jpg" alt="catalogo d">
-            <img src="../imagenes/catalogof.jpg" alt="catalogo f">
-        </section>
-        <div class="catalogo__texto">
-            <p>Lorem ipsum color sit amet consectetur adipisicing elit. Consequuntur, itaque, quod necessitatibus rerum tempora, a praesentium magnam tempore dicta molestias nemo quas. Accusantium repellendus aliquam dolor tempore similique ratione numquam.
-            </p>
+<body>
+  <header class="header d-flex justify-content-center">
+    <!-- logo -->
+    <a href="../index.html"><img src="../imagenes/logo.jpg" alt="logo de mi pagina"class="logo"></a>
+  </header>
+  <navegador class="navegador">
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navegador">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navegador__lista d-flex justify-content-evenly list-inline fs-6 fw-bold">
+            <li class="navegador__lista__link">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./galeria.html">Galería</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="#">Catálogo</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./comocomprar.html">Cómo Comprar</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </main>
-    <footer class="footer">
-        <!-- mis redes sociales -->
-        <h3>Seguinos en:</h3>
-        <ul class="footer__misredes">
-            <li class="footer__misredes__link"><a href="https://www.facebook.com/SublimateOk2018"target="_blank"><img src="../imagenes/facebook.png"alt="Facebook"></a></li>
-            <li class="footer__misredes__link"><a href="https://www.instagram.com/sublimate18"target="_blank"><img src="../imagenes/instagram.png"alt="Instagram"></a></li>
-            <li class="footer__misredes__link"><a href="https://www.whatsapp.com"target="_blank"><img src="../imagenes/whatsapp.png"alt="whatsapp"></a></li>
-        </ul>
-    </footer>
+      </div>
+    </nav>
+  </navegador>
+  <main class="catalogo text-center">
+    <!-- catalogo imagenes -->
+    <section class="catalogo__variedades container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogot.jpg" alt="catalogo t">
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogov.jpg" alt="catalogo v">
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogol.jpg" alt="catalogo l">
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogod.jpg" alt="catalogo d">
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogof.jpg" alt="catalogo f">
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <img src="../imagenes/catalogof.jpg" alt="catalogo f">
+        </div>
+      </div>
+    </section>
+    <div class="text-center mx-4">
+        <p>Acá te mostramos algunas ideas para que elijas o para que te inspires! Pedinos lo que se te ocurra, que nosotros lo convertimos en stickers. Elegí de nuestro catálogo, enviános tu imagen o contanos tu idea. Música, deportes, personajes, logos, marcas, caricaturas, frases, nombres y más!
+        </p>
+    </div>
+  </main>
+  <main>
+  <footer class="footer">
+    <!-- mis redes sociales -->
+    <h3 class="fs-6 fw-bold mx-4">Seguinos en:</h3>
+    <ul class="footer__misredes text-center d-flex justify-content-center list-inline">
+        <li class="footer__misredes__link"><a href="https://www.facebook.com/SublimateOk2018"target="_blank"><img src="../imagenes/facebook.png"alt="Facebook"></a></li>
+        <li class="footer__misredes__link"><a href="https://www.instagram.com/sublimate18"target="_blank"><img src="../imagenes/instagram.png"alt="Instagram"></a></li>
+        <li class="footer__misredes__link"><a href="https://www.whatsapp.com"target="_blank"><img src="../imagenes/whatsapp.png"alt="whatsapp"></a></li>
+    </ul>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
