@@ -127,3 +127,18 @@ body{
     color: red;
     margin: 15px;
 }
+/* como comprar */
+.layoutcomocomprar{
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "comocomprar" auto
+    "footer" auto;
+}
+.comocomprar{
+    grid-area: comocomprar;
+}
+.comocomprar h2{
+    color: blueviolet;
+}
