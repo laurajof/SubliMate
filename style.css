@@ -66,3 +66,32 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
+/* galeria de fotos */
+.layoutgaleria{
+    margin: 0;
+    display: grid;
+    grid-template:
+    "header" auto
+    "navegador" auto
+    "galeria" auto
+    "footer" auto;
+}
+.galeria__fotos{
+    width: 80%;
+}
+.galeria__fotos img{
+    width: 200px;
+    margin: 5px;
+}
+/* footer de mi sitio */
+.footer{
+    grid-area: footer;
+}
+.footer__misredes{
+    background-image: url(./imagenes/footer.png);
+    background-color: #d3bcf6;
+}
+.footer__misredes__link img{
+    margin: 10px;
+    width: 50px
+}
