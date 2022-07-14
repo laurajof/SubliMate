@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,52 +14,73 @@
     <link rel="stylesheet" href="style.css">
     <title>SubliMate</title>
 </head>
-<body class="layout">
-    <header class="header">
-        <!-- logo -->
-        <a href="#"><img src="./imagenes/logo.jpg" alt="logo de mi pagina"class="logo"></a>
-    </header>
-    <navegador class="navegador">
-        <!-- barra de navegacion -->
-        <nav>
-            <ul class="navegador__lista">
-                <li class="navegador__lista__link"><a href="#">Inicio</a></li>
-                <li class="navegador__lista__link"><a href="./paginas/galeria.html">Galeria</a></li>
-                <li class="navegador__lista__link"><a href="./paginas/catalogo.html">Catalogo</a></li>
-                <li class="navegador__lista__link"><a href="./paginas/comocomprar.html">Como Comprar</a></li>
-                <li class="navegador__lista__link"><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </navegador>
-    <main class="main">
-        <section class="maininicio">
-            <!-- imagen principal y texto -->
-            <img src="./imagenes/fotoprincipal.jpg" alt="foto principal de mi pagina">
-            <div class="main__texto">
-                <p>Hola, soy <span class="resaltado">SubliMate</span>!!!</p>
-                <p>Mamá de Alejo, amet consectetur adipisicing elit. Minima asperiores dignissimos, unde nostrum non.</p>
-                <p>Mamá de Milo color sit amet consectetur adipisicing elit. Ullam necessitatibus deleniti tempora quam?</p>
-                <p>Lorem ipsum, color sit amet consectetur adipisicing elit. Atque sunt beatae cumque fugiat reiciendis. Sed sint corporis dignissimos voluptatum facere ut minus, nulla quo color recusandae coloribus a quidem dicta.
-                Consequatur, doloribus fuga incidunt nesciunt praesentium accusamus repudiandae minus, inventore aliquam fugit voluptatum quam quo labore nam. Voluptas, sed vel culpa molestiae harum aliquid sequi aliquam itaque, temporibus quisquam nihil!
-                Tempore expedita perspiciatis magnam optio temporibus autem. A, accusantium nobis perspiciatis quos nisi cum, ex facere, eum consequatur perferendis ea! Earum, dicta vel? Colores perspiciatis doloribus labore perferendis, placeat.</p>
-            </div>
-        </section>
-        <section>
-            <div class="boton">
-                <a href="./paginas/catalogo.html"> Stickers!</a>
-            </div>
-            <h2 class="subtituloresaltado">Personalizá tus cosas con lo que más te gusta!</h2>
-        </section>
-    </main>
-    <footer class="footer">
-        <!-- mis redes sociales -->
-        <h3>Seguinos en:</h3>
-        <ul class="footer__misredes">
-            <li class="footer__misredes__link"><a href="https://www.facebook.com/SublimateOk2018"target="_blank"><img src="./imagenes/facebook.png"alt="Facebook"></a></li>
-            <li class="footer__misredes__link"><a href="https://www.instagram.com/sublimate18"target="_blank"><img src="./imagenes/instagram.png"alt="Instagram"></a></li>
-            <li class="footer__misredes__link"><a href="https://www.whatsapp.com"target="_blank"><img src="./imagenes/whatsapp.png"alt="whatsapp"></a></li>
-        </ul>
-    </footer>
-    
+<body>
+  <header class="header d-flex justify-content-center">
+    <!-- logo -->
+    <a href="#"><img src="./imagenes/logo.jpg" alt="logo de mi pagina"class="logo"></a>
+  </header>
+  <navegador class="navegador">
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navegador">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navegador__lista d-flex justify-content-evenly list-inline fs-6 fw-bold">
+            <li class="navegador__lista__link">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./paginas/galeria.html">Galería</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./paginas/catalogo.html">Catálogo</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./paginas/comocomprar.html">Cómo Comprar</a>
+            </li>
+            <li class="navegador__lista__link">
+              <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </navegador>
+  <main class="main">
+    <section class="container-fluid">
+        <!-- imagen principal y texto -->
+        <div class="row text-center align-items-center">
+          <div class="col-lg-5 col-sm-12 maininicio">
+            <img class="rounded" src="./imagenes/fotoprincipal.jpg" alt="foto principal de mi pagina">
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+              <p>Hola, somos <span class="resaltado fw-bold">SubliMate</span>!!!</p>
+              <p> Te contamos un poco de nosotros, mi nombre es Laura, mamá de Alejo y Milo.</p>
+              <p>Juntos formamos un gran equipo de trabajo. Creando - jugando y jugando - creando!</p>
+              <p>Hacemos Stickers / Etiquetas / Calcos / Vinilos autoadhesivos para que decores, personalices, nombres y le pongas onda a todas tus cosas con lo que más te guste!. Para vos, para regalar o para compartir!!! Tenemos un montón de ideas, pero también queremos escuchar las tuyas!!! Variedades, colores, para todas las edades y todos los gustos. No te quedes con las ganas y no te quedes sin tu pack!!! Te invitamos a conocernos...</p>
+          </div>
+        </div>
+        
+    </section>
+    <section>
+        <div class="boton">
+            <a href="./paginas/catalogo.html"> Stickers!</a>
+        </div>
+        <h2 class="subtituloresaltado fw-bold fs-4 text-center">Personalizá tus cosas con lo que más te gusta!</h2>
+    </section>
+  </main>
+  <footer class="footer">
+    <!-- mis redes sociales -->
+    <h3 class="fs-6 fw-bold mx-4">Seguinos en:</h3>
+    <ul class="footer__misredes text-center d-flex justify-content-center list-inline text-decoration-none">
+        <li class="footer__misredes__link"><a href="https://www.facebook.com/SublimateOk2018"target="_blank"><img src="./imagenes/facebook.png"alt="Facebook"></a></li>
+        <li class="footer__misredes__link"><a href="https://www.instagram.com/sublimate18"target="_blank"><img src="./imagenes/instagram.png"alt="Instagram"></a></li>
+        <li class="footer__misredes__link"><a href="https://www.whatsapp.com"target="_blank"><img src="./imagenes/whatsapp.png"alt="whatsapp"></a></li>
+    </ul>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
