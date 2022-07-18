@@ -83,6 +83,12 @@ body{
     width: 200px;
     margin: 5px;
 }
+.sticker:hover{
+    transform: scale(1.07);
+}
+.sticker{
+    transition: 1s;
+}
 /* footer de mi sitio */
 .footer{
     grid-area: footer;
