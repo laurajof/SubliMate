@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Didact Gothic', sans-serif ;
+}
+/* header de mi sitio */
+.logo{
+    width: 200px;
+}
+.header{
+    background-color: #d3bcf6;
+    grid-area: header;
+}
+/* barra de navegacion de mi sitio */
+.navegador{
+    grid-area: navegador;
+    background-color: #d3bcf6;
+
+    &__lista{
+        width: 80%;
+        margin: 0 auto;
+        align-items: flex-end;
+        & a{
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+        }
+    }
+}
+
+/* footer de mi sitio */
+.footer{
+    grid-area: footer;
+
+    &__misredes{
+        background-image: url(../imagenes/footer.png);
+        background-color: #d3bcf6;
+    }
+}
+.bi{
+    color: black;
+    margin: 10px;
+}

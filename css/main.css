@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Didact Gothic', sans-serif; }
+
+/* header de mi sitio */
+.logo {
+  width: 200px; }
+
+.header {
+  background-color: #d3bcf6;
+  grid-area: header; }
+
+/* barra de navegacion de mi sitio */
+.navegador {
+  grid-area: navegador;
+  background-color: #d3bcf6; }
+  .navegador__lista {
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-end; }
+    .navegador__lista a {
+      text-decoration: none;
+      color: black;
+      margin: 25px; }
+
+/* footer de mi sitio */
+.footer {
+  grid-area: footer; }
+  .footer__misredes {
+    background-image: url(../imagenes/footer.png);
+    background-color: #d3bcf6; }
+
+.bi {
+  color: black;
+  margin: 10px; }
+
+.header {
+  background-color: #d3bcf6; }
+
+.navegador {
+  background-color: #d3bcf6; }
+
+.html {
+  height: 100%; }
+
+/* main index */
+.main {
+  grid-area: main;
+  margin-top: 20px; }
+
+.maininicio img {
+  width: 500px; }
+
+.subtituloresaltado {
+  color: blueviolet; }
+
+.resaltado {
+  color: blueviolet; }
+
+.boton {
+  background-color: rgba(243, 61, 97, 0.544);
+  width: fit-content;
+  border: solid 3px rgba(239, 10, 56, 0.544);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px auto; }
+
+.boton:hover {
+  transform: scale(1.5);
+  transition: all 1s; }
+
+.boton a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px; }
+
+/* main galeria de fotos */
+.layoutgaleria {
+  margin: 0;
+  display: grid;
+  grid-template: "header" auto "navegador" auto "galeria" auto "footer" auto; }
+
+.galeria__fotos {
+  width: 80%; }
+
+.galeria__fotos img {
+  width: 200px;
+  margin: 5px; }
+
+.sticker:hover {
+  transform: scale(1.07); }
+
+.sticker {
+  transition: 1s; }
+
+/* main contacto */
+.layoutcontacto {
+  display: grid;
+  grid-template: "header" auto "navegador" auto "contacto" auto "footer" auto; }
+
+.contacto {
+  grid-area: contacto; }
+  .contacto__item {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; }
+    .contacto__item h2 {
+      margin: 5px;
+      color: blueviolet;
+      text-decoration: underline; }
+
+.mapa {
+  width: 600px; }
+
+.contacto h3 {
+  color: red;
+  margin: 15px; }
+
+/* main como comprar */
+.layoutcomocomprar {
+  display: grid;
+  grid-template: "header" auto "navegador" auto "comocomprar" auto "footer" auto; }
+
+.comocomprar {
+  grid-area: comocomprar; }
+
+.comocomprar h2 {
+  color: blueviolet; }
+
+/* main catalogo */
+.layoutcatalogo {
+  display: grid;
+  grid-template: "header" auto "navegador" auto "catalogo" auto "footer" auto; }
+
+.catalogo {
+  grid-area: catalogo; }
+  .catalogo__variedades img {
+    width: 200px;
+    margin: 10px; }
