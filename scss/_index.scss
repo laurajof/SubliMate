@@ -1,8 +1,8 @@
 .header{
-    background-color: $color-principal;
+    background-color: map-get($colores, "color-principal");
 }
 .navegador{
-    background-color: $color-principal;
+    background-color: map-get($colores, "color-principal");
 }
 .html{
     height: $pantalla-completa;

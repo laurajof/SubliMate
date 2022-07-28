@@ -1,3 +1,21 @@
-$color-principal:#d3bcf6;
-$color-fuente-resaltado: blueviolet;
 $pantalla-completa: 100%;
+
+$colores: (
+    "color-principal": #d3bcf6,
+    "color-fuente-resaltado": blueviolet,
+);
+
+/* mixin */
+@mixin boton ($bgcolor){
+    background-color: $bgcolor;
+    width: fit-content;
+    border: solid 3px rgba(239, 10, 56, 0.544);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px auto;
+}
+@mixin h2 ($text){
+    color: map-get($colores, "color-fuente-resaltado");
+    text-align: $text;
+}
+

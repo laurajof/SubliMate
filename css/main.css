@@ -1,3 +1,4 @@
+/* mixin */
 * {
   margin: 0;
   padding: 0; }
@@ -54,12 +55,15 @@ body {
 .maininicio img {
   width: 500px; }
 
+/* mixin */
 .subtituloresaltado {
-  color: blueviolet; }
+  color: blueviolet;
+  text-align: center; }
 
 .resaltado {
   color: blueviolet; }
 
+/* mixin */
 .boton {
   background-color: rgba(243, 61, 97, 0.544);
   width: fit-content;
@@ -90,11 +94,10 @@ body {
     width: 200px;
     margin: 5px; }
 
-.sticker:hover {
-  transform: scale(1.07); }
-
 .sticker {
   transition: 1s; }
+  .sticker:hover {
+    transform: scale(1.07); }
 
 /* main contacto */
 .layoutcontacto {
@@ -108,11 +111,12 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    text-align: center; }
+    align-items: center; }
     .contacto__item h2 {
       margin: 5px;
+      /* mixin */
       color: blueviolet;
+      text-align: center;
       text-decoration: underline; }
 
 .mapa {
@@ -130,7 +134,9 @@ body {
 .comocomprar {
   grid-area: comocomprar; }
   .comocomprar h2 {
-    color: blueviolet; }
+    /* mixin */
+    color: blueviolet;
+    text-align: start; }
 
 /* main catalogo */
 .layoutcatalogo {
