@@ -43,10 +43,10 @@
 }
 .galeria__fotos{
     width: 80%;
-}
-.galeria__fotos img{
-    width: 200px;
-    margin: 5px;
+    & img{
+        width: 200px;
+        margin: 5px;
+    }
 }
 .sticker:hover{
     transform: scale(1.07);
@@ -99,9 +99,9 @@
 }
 .comocomprar{
     grid-area: comocomprar;
-}
-.comocomprar h2{
-    color: blueviolet;
+    & h2{
+        color: blueviolet;
+    }
 }
 
 /* main catalogo */
