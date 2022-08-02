@@ -18,4 +18,8 @@ $colores: (
     color: map-get($colores, "color-fuente-resaltado");
     text-align: $text;
 }
-
+/* extend */
+%centrar{
+    display: flex;
+    justify-content: center;
+}

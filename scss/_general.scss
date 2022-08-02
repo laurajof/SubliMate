@@ -12,6 +12,7 @@ body{
 .header{
     background-color: map-get($colores, "color-principal");
     grid-area: header;
+    @extend %centrar;
 }
 /* barra de navegacion de mi sitio */
 .navegador{
@@ -37,6 +38,7 @@ body{
     &__misredes{
         background-image: url(../imagenes/footer.png);
         background-color: map-get($colores, "color-principal");
+        @extend %centrar;
     }
 }
 .bi{
