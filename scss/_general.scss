@@ -4,6 +4,9 @@
 }
 body{
     font-family:'Didact Gothic', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /* header de mi sitio */
 .logo{
@@ -14,7 +17,7 @@ body{
     grid-area: header;
     @extend %centrar;
 }
-/* barra de navegacion de mi sitio */
+/* barra de navegacion de mi sitio */ 
 .navegador{
     grid-area: navegador;
     background-color: map-get($colores, "color-principal");
@@ -34,6 +37,7 @@ body{
 /* footer de mi sitio */
 .footer{
     grid-area: footer;
+    margin-top: auto;
 
     &__misredes{
         background-image: url(../imagenes/footer.png);

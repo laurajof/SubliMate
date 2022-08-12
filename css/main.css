@@ -9,7 +9,10 @@
   padding: 0; }
 
 body {
-  font-family: 'Didact Gothic', sans-serif; }
+  font-family: 'Didact Gothic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 /* header de mi sitio */
 .logo {
@@ -34,7 +37,8 @@ body {
 
 /* footer de mi sitio */
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+  margin-top: auto; }
   .footer__misredes {
     background-image: url(../imagenes/footer.png);
     background-color: #d3bcf6; }
