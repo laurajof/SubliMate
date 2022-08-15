@@ -46,6 +46,8 @@ body {
 .bi {
   color: black;
   margin: 10px; }
+  .bi:hover {
+    color: white; }
 
 .header {
   background-color: #d3bcf6; }

@@ -81,7 +81,7 @@
     width: 600px;
 }
 .contacto h3{
-    color: red;
+    color: map-get($colores, "color-fuente-contacto");
     margin: 15px;
 }
 
