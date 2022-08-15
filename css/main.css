@@ -1,6 +1,6 @@
 /* mixin */
 /* extend */
-.header, .footer__misredes {
+.header, .header__section, .footer__misredes {
   display: flex;
   justify-content: center; }
 
@@ -20,11 +20,10 @@ body {
 
 .header {
   background-color: #d3bcf6;
-  grid-area: header; }
+  flex-direction: column; }
 
 /* barra de navegacion de mi sitio */
 .navegador {
-  grid-area: navegador;
   background-color: #d3bcf6; }
   .navegador__lista {
     width: 80%;
@@ -37,7 +36,6 @@ body {
 
 /* footer de mi sitio */
 .footer {
-  grid-area: footer;
   margin-top: auto; }
   .footer__misredes {
     background-image: url(../imagenes/footer.png);
@@ -94,11 +92,6 @@ body {
   font-size: 20px; }
 
 /* main galeria de fotos */
-.layoutgaleria {
-  margin: 0;
-  display: grid;
-  grid-template: "header" auto "navegador" auto "galeria" auto "footer" auto; }
-
 .galeria__fotos {
   width: 80%; }
   .galeria__fotos img {
@@ -111,24 +104,18 @@ body {
     transform: scale(1.07); }
 
 /* main contacto */
-.layoutcontacto {
-  display: grid;
-  grid-template: "header" auto "navegador" auto "contacto" auto "footer" auto; }
-
-.contacto {
-  grid-area: contacto; }
-  .contacto__item {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .contacto__item h2 {
-      margin: 5px;
-      /* mixin */
-      color: blueviolet;
-      text-align: center;
-      text-decoration: underline; }
+.contacto__item {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .contacto__item h2 {
+    margin: 5px;
+    /* mixin */
+    color: blueviolet;
+    text-align: center;
+    text-decoration: underline; }
 
 .mapa {
   width: 600px; }
@@ -138,27 +125,15 @@ body {
   margin: 15px; }
 
 /* main como comprar */
-.layoutcomocomprar {
-  display: grid;
-  grid-template: "header" auto "navegador" auto "comocomprar" auto "footer" auto; }
-
-.comocomprar {
-  grid-area: comocomprar; }
-  .comocomprar h2 {
-    /* mixin */
-    color: blueviolet;
-    text-align: start; }
+.comocomprar h2 {
+  /* mixin */
+  color: blueviolet;
+  text-align: start; }
 
 /* main catalogo */
-.layoutcatalogo {
-  display: grid;
-  grid-template: "header" auto "navegador" auto "catalogo" auto "footer" auto; }
-
-.catalogo {
-  grid-area: catalogo; }
-  .catalogo__variedades img {
-    width: 200px;
-    margin: 10px; }
+.catalogo__variedades img {
+  width: 200px;
+  margin: 10px; }
 
 /* MEDIA 450px - Mobile */
 @media screen and (max-width: 450px) {

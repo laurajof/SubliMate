@@ -17,13 +17,16 @@ body {
 
 .header {
     background-color: map-get($colores, "color-principal");
-    grid-area: header;
     @extend %centrar;
+    flex-direction: column;
+
+    &__section {
+        @extend %centrar;
+    }
 }
 
 /* barra de navegacion de mi sitio */
 .navegador {
-    grid-area: navegador;
     background-color: map-get($colores, "color-principal");
 
     &__lista {
@@ -41,7 +44,6 @@ body {
 
 /* footer de mi sitio */
 .footer {
-    grid-area: footer;
     margin-top: auto;
 
     &__misredes {

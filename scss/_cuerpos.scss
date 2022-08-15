@@ -35,16 +35,6 @@
 }
 
 /* main galeria de fotos */
-.layoutgaleria {
-    margin: 0;
-    display: grid;
-    grid-template:
-        "header" auto
-        "navegador" auto
-        "galeria" auto
-        "footer" auto;
-}
-
 .galeria__fotos {
     width: 80%;
 
@@ -63,17 +53,7 @@
 }
 
 /* main contacto */
-.layoutcontacto {
-    display: grid;
-    grid-template:
-        "header" auto
-        "navegador" auto
-        "contacto" auto
-        "footer" auto;
-}
-
 .contacto {
-    grid-area: contacto;
 
     &__item {
         width: 80%;
@@ -101,17 +81,7 @@
 }
 
 /* main como comprar */
-.layoutcomocomprar {
-    display: grid;
-    grid-template:
-        "header" auto
-        "navegador" auto
-        "comocomprar" auto
-        "footer" auto;
-}
-
 .comocomprar {
-    grid-area: comocomprar;
 
     & h2 {
         /* mixin */
@@ -120,17 +90,7 @@
 }
 
 /* main catalogo */
-.layoutcatalogo {
-    display: grid;
-    grid-template:
-        "header" auto
-        "navegador" auto
-        "catalogo" auto
-        "footer" auto;
-}
-
 .catalogo {
-    grid-area: catalogo;
 
     &__variedades img {
         width: 200px;
