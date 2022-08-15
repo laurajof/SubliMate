@@ -160,8 +160,8 @@ body {
     width: 200px;
     margin: 10px; }
 
-/* MEDIA 360px - Mobile */
-@media screen and (max-width: 360px) {
+/* MEDIA 450px - Mobile */
+@media screen and (max-width: 450px) {
   /* header mobile */
   .logo {
     width: 150px; }

@@ -1,41 +1,51 @@
-/* MEDIA 360px - Mobile */
-@media screen and (max-width: 360px){
+/* MEDIA 450px - Mobile */
+@media screen and (max-width: 450px) {
+
     /* header mobile */
-    .logo{
+    .logo {
         width: 150px;
     }
+
     /* barra de navegacion para mobile */
     .navegador__lista {
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
     }
-    .navegador__lista a{
+
+    .navegador__lista a {
         font-size: 10px;
         margin: 5px;
     }
+
     /* index mobile */
-    .subtituloresaltado{
+    .subtituloresaltado {
         font-size: 20px;
     }
-    .maininicio{
+
+    .maininicio {
         flex-direction: column;
     }
-    .maininicio img{
+
+    .maininicio img {
         width: 250px;
     }
+
     /* galeria mobile */
-    .galeria__fotos img{
+    .galeria__fotos img {
         width: 180px;
         margin: 3px;
     }
+
     /* contacto mobile */
-    .contacto__item{
+    .contacto__item {
         flex-direction: column;
     }
-    .mapa{
+
+    .mapa {
         width: 280px;
     }
-    .contacto h3{
+
+    .contacto h3 {
         font-size: 20px;
     }
 }

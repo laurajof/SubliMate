@@ -4,13 +4,13 @@ $colores: (
     "color-principal": #d3bcf6,
     "color-fuente-resaltado": blueviolet,
     "color-redes": black,
-    "color-redes-active": white, 
+    "color-redes-active": white,
     "color-fuente-nav": black,
     "color-fuente-contacto": red,
 );
 
 /* mixin */
-@mixin boton ($bgcolor){
+@mixin boton ($bgcolor) {
     background-color: $bgcolor;
     width: fit-content;
     border: solid 3px rgba(239, 10, 56, 0.544);
@@ -18,12 +18,14 @@ $colores: (
     padding: 10px;
     margin: 20px auto;
 }
-@mixin h2 ($text){
+
+@mixin h2 ($text) {
     color: map-get($colores, "color-fuente-resaltado");
     text-align: $text;
 }
+
 /* extend */
-%centrar{
+%centrar {
     display: flex;
     justify-content: center;
 }

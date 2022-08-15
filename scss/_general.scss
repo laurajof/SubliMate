@@ -1,32 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    font-family:'Didact Gothic', sans-serif ;
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 /* header de mi sitio */
-.logo{
+.logo {
     width: 200px;
 }
-.header{
+
+.header {
     background-color: map-get($colores, "color-principal");
     grid-area: header;
     @extend %centrar;
 }
-/* barra de navegacion de mi sitio */ 
-.navegador{
+
+/* barra de navegacion de mi sitio */
+.navegador {
     grid-area: navegador;
     background-color: map-get($colores, "color-principal");
 
-    &__lista{
+    &__lista {
         width: 80%;
         margin: 0 auto;
         align-items: flex-end;
-        & a{
+
+        & a {
             text-decoration: none;
             color: map-get($colores, "color-fuente-nav");
             margin: 25px;
@@ -35,20 +40,22 @@ body{
 }
 
 /* footer de mi sitio */
-.footer{
+.footer {
     grid-area: footer;
     margin-top: auto;
 
-    &__misredes{
+    &__misredes {
         background-image: url(../imagenes/footer.png);
         background-color: map-get($colores, "color-principal");
         @extend %centrar;
     }
 }
-.bi{
+
+.bi {
     color: map-get($colores, "color-redes");
     margin: 10px;
-    &:hover{
+
+    &:hover {
         color: map-get($colores, "color-redes-active");
     }
 }

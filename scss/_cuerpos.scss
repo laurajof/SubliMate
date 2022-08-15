@@ -1,27 +1,33 @@
 /* main index */
-.main{
+.main {
     grid-area: main;
     margin-top: 20px;
 }
-.maininicio img{
+
+.maininicio img {
     width: 500px;
 }
+
 /* mixin */
-.subtituloresaltado{
+.subtituloresaltado {
     @include h2 (center);
 }
-.resaltado{
+
+.resaltado {
     color: map-get($colores, "color-fuente-resaltado");
 }
+
 /* mixin */
-.boton{
+.boton {
     @include boton(rgba(243, 61, 97, 0.544));
 }
-.boton:hover{
+
+.boton:hover {
     transform: scale(1.5);
     transition: all 1s;
 }
-.boton a{
+
+.boton a {
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -29,47 +35,54 @@
 }
 
 /* main galeria de fotos */
-.layoutgaleria{
+.layoutgaleria {
     margin: 0;
     display: grid;
     grid-template:
-    "header" auto
-    "navegador" auto
-    "galeria" auto
-    "footer" auto;
+        "header" auto
+        "navegador" auto
+        "galeria" auto
+        "footer" auto;
 }
-.galeria__fotos{
+
+.galeria__fotos {
     width: 80%;
-    & img{
+
+    & img {
         width: 200px;
         margin: 5px;
     }
 }
-.sticker{
+
+.sticker {
     transition: 1s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.07);
     }
 }
 
 /* main contacto */
-.layoutcontacto{
+.layoutcontacto {
     display: grid;
     grid-template:
-    "header" auto
-    "navegador" auto
-    "contacto" auto
-    "footer" auto;
+        "header" auto
+        "navegador" auto
+        "contacto" auto
+        "footer" auto;
 }
-.contacto{
+
+.contacto {
     grid-area: contacto;
-    &__item{
+
+    &__item {
         width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        & h2{
+
+        & h2 {
             margin: 5px;
             /* mixin */
             @include h2 (center);
@@ -77,43 +90,49 @@
         }
     }
 }
-.mapa{
+
+.mapa {
     width: 600px;
 }
-.contacto h3{
+
+.contacto h3 {
     color: map-get($colores, "color-fuente-contacto");
     margin: 15px;
 }
 
 /* main como comprar */
-.layoutcomocomprar{
+.layoutcomocomprar {
     display: grid;
     grid-template:
-    "header" auto
-    "navegador" auto
-    "comocomprar" auto
-    "footer" auto;
+        "header" auto
+        "navegador" auto
+        "comocomprar" auto
+        "footer" auto;
 }
-.comocomprar{
+
+.comocomprar {
     grid-area: comocomprar;
-    & h2{
+
+    & h2 {
         /* mixin */
         @include h2 (start);
     }
 }
 
 /* main catalogo */
-.layoutcatalogo{
+.layoutcatalogo {
     display: grid;
     grid-template:
-    "header" auto
-    "navegador" auto
-    "catalogo" auto
-    "footer" auto;
+        "header" auto
+        "navegador" auto
+        "catalogo" auto
+        "footer" auto;
 }
-.catalogo{
+
+.catalogo {
     grid-area: catalogo;
-    &__variedades img{
+
+    &__variedades img {
         width: 200px;
         margin: 10px;
     }
